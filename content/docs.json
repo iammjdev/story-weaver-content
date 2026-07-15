@@ -1,0 +1,83 @@
+[
+  {
+    "id": "welcome-overview",
+    "icon": "book-open",
+    "title": "Welcome to StoryWeaver Workspace",
+    "description": "Introduction to the visual novel authoring platform, senior project structure, and pair programming workspace.",
+    "content": [
+      {
+        "header": "Project Overview",
+        "text": "Welcome to the central documentation hub and local-first knowledge base for StoryWeaver - a computer science senior project dedicated to building a local-first, interactive game engine and authoring pipeline for branching visual novel narratives."
+      },
+      {
+        "header": "Thesis Evaluation Framework",
+        "text": "This workspace integrates academic theory, system architecture, and an AI-Human pairing audit trail for senior thesis evaluation. The entire implementation process is documented to prove software engineering rigor."
+      }
+    ]
+  },
+  {
+    "id": "quick-navigation",
+    "icon": "play",
+    "title": "Quick Navigation Guide",
+    "description": "Direct access points to the AI Collaboration Log, Wiki Content Index, and CS02D Project Proposal.",
+    "content": [
+      {
+        "header": "AI Collaboration Log (Master Index)",
+        "text": "The primary audit trail tracking prompts, generated code blocks, and evaluations for every iteration of project development."
+      },
+      {
+        "header": "Wiki Content Index",
+        "text": "The central catalog for literature sources, technical concepts, and project entities involved in the system's creation."
+      },
+      {
+        "header": "CS02D Project Proposal",
+        "text": "The core project specification, architectural overview, and developmental milestones for evaluation."
+      }
+    ]
+  },
+  {
+    "id": "workspace-architecture",
+    "icon": "layers",
+    "title": "Workspace Architecture",
+    "description": "Detailed structural overview of the Theoretical Wiki and the AI Collaboration Logs.",
+    "content": [
+      {
+        "header": "The Theoretical Wiki (wiki/)",
+        "text": "Holds structured notes linking software implementation to academic foundations: sources (summaries of research papers), concepts (directed graph theory, finite state machine, interpreter pattern, StoryWeaver architecture), and entities."
+      },
+      {
+        "header": "The AI Collaboration Logs (AI_Prompt_Logs/)",
+        "text": "Chronological audit logs tracking code generation sessions. Subfolders organize iterations into UI Scaffolding, Core Logic & Traversal, and Refactoring & Validation."
+      }
+    ]
+  },
+  {
+    "id": "tech-stack-rules",
+    "icon": "settings",
+    "title": "Tech Stack Rules",
+    "description": "Architectural rules, languages, libraries, and storage constraints governing the codebase.",
+    "content": [
+      {
+        "header": "Languages and Libraries",
+        "text": "Strict type safety via TypeScript, React frontend library, Zustand for reactive global state management, and Zod for runtime data validation schemas."
+      },
+      {
+        "header": "Local-First Storage Layer",
+        "text": "Dexie.js-managed IndexedDB and Origin Private File System (OPFS) to bypass the 5MB browser localStorage limits and store heavy multimedia assets offline."
+      }
+    ]
+  },
+  {
+    "id": "logging-standards",
+    "icon": "file-json",
+    "title": "Logging Standards",
+    "description": "Structure of documentation logs, frontmatter metadata properties, and prompt logs formats.",
+    "content": [
+      {
+        "header": "Markdown Log Template",
+        "text": "Every iteration is documented as a markdown file inside AI_Prompt_Logs with metadata properties, prompt history, generated code files, and human review placeholders.",
+        "code": "---\niteration_id: \"001\"\ndate: 2026-06-13\ncategory: UI Scaffolding\nstatus: Completed\ntags:\n  - senior-project\n  - ui-scaffolding\n  - prompt-log\n---"
+      }
+    ]
+  }
+]
