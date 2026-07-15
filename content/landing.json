@@ -1,0 +1,112 @@
+{
+  "navbar": {
+    "brand": {
+      "title": "StoryWeaver",
+      "tagline": "Visual Novel Authoring Engine"
+    },
+    "links": [
+      {
+        "label": "Features",
+        "anchor": "#features"
+      },
+      {
+        "label": "Documentation",
+        "anchor": "#docs"
+      },
+      {
+        "label": "About",
+        "anchor": "#about"
+      }
+    ],
+    "actions": [
+      {
+        "label": "Launch Workshop",
+        "path": "/dashboard"
+      }
+    ]
+  },
+  "hero": {
+    "tagline": "Evaluation Prototype v1.0",
+    "headline": "StoryWeaver",
+    "subtitle": "An interactive, local-first game engine and visual novel authoring platform driven by graphic nodes, dynamic variables, and custom state traversal.",
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Interactive Node Types"
+      },
+      {
+        "value": "100%",
+        "label": "Client-Side Traversal"
+      },
+      {
+        "value": "Offline",
+        "label": "First Storage Architecture"
+      }
+    ],
+    "primaryCta": {
+      "label": "Launch Workshop",
+      "path": "/dashboard"
+    },
+    "secondaryCta": {
+      "label": "Learn More",
+      "url": ""
+    }
+  },
+  "features": [
+    {
+      "id": "advanced-logic",
+      "icon": "git-branch",
+      "title": "Advanced Logic Engine",
+      "description": "Visualizing complex storylines through directed graph structures. Create non-linear visual novels with dynamic condition checks.",
+      "benefits": [
+        "Interactive story flow branching",
+        "Fork and merge multi-path traversal",
+        "Condition and custom action evaluations"
+      ]
+    },
+    {
+      "id": "collaboration-layers",
+      "icon": "users",
+      "title": "Real-Time Collaboration",
+      "description": "A collaborative environment that coordinates version tracking, schema structures, and development logs.",
+      "benefits": [
+        "AI-Human pair programming logs",
+        "Compounding persistent wiki files",
+        "Consistent indexing and logging structures"
+      ]
+    },
+    {
+      "id": "security-storage",
+      "icon": "shield",
+      "title": "Security and Storage Layers",
+      "description": "Local-first security design using client-side databases. Avoid external database costs and protect story assets.",
+      "benefits": [
+        "IndexedDB offline project storage",
+        "Origin Private File System assets support",
+        "Single-file HTML standalone compilation"
+      ]
+    }
+  ],
+  "footer": {
+    "brand": {
+      "title": "StoryWeaver",
+      "copyright": "Copyright 2026 StoryWeaver. All rights reserved."
+    },
+    "columns": [
+      {
+        "title": "Product",
+        "links": [
+          { "label": "Node Editor", "url": "/dashboard" },
+          { "label": "Simulator", "url": "/dashboard" },
+          { "label": "Bundler", "url": "/dashboard" }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          { "label": "Wiki Index", "url": "" }
+        ]
+      }
+    ]
+  }
+}
