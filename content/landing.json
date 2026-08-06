@@ -38,7 +38,7 @@
     "headlineMuted": "Zero code required.",
     "subtitle": "Design branching storylines, complex variable state machines, and interactive visual novels using a high-performance local-first graph engine.",
     "primaryCta": {
-      "label": "Open Studio",
+      "label": "Open Project Dashboard",
       "path": "/dashboard"
     },
     "secondaryCta": {
