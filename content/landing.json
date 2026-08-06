@@ -365,14 +365,6 @@
           {
             "label": "Docs & Guides",
             "path": "/docs"
-          },
-          {
-            "label": "Wiki Index",
-            "url": "#"
-          },
-          {
-            "label": "CS02D Proposal",
-            "url": "#"
           }
         ]
       },
