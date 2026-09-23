@@ -96,26 +96,11 @@
           "kind": "graphing",
           "caption": "Drag onto canvas",
           "chips": [
-            {
-              "icon": "message-square",
-              "label": "Dialogue"
-            },
-            {
-              "icon": "split",
-              "label": "Choice"
-            },
-            {
-              "icon": "git-branch",
-              "label": "Condition"
-            },
-            {
-              "icon": "package",
-              "label": "Action"
-            },
-            {
-              "icon": "keyboard",
-              "label": "Input"
-            }
+            { "icon": "message-square", "label": "Dialogue" },
+            { "icon": "split", "label": "Choice" },
+            { "icon": "git-branch", "label": "Condition" },
+            { "icon": "package", "label": "Action" },
+            { "icon": "keyboard", "label": "Input" }
           ],
           "droppedIcon": "message-square",
           "droppedLabel": "node-014 · dropped"
@@ -136,29 +121,14 @@
           "dialogueText": "You have 150 gold. Buy the rare blade?",
           "dialogueHighlight": "150 gold",
           "choices": [
-            {
-              "label": "Yes — spend 100 gold",
-              "locked": false
-            },
-            {
-              "label": "Decline (locked)",
-              "locked": true
-            }
+            { "label": "Yes — spend 100 gold", "locked": false },
+            { "label": "Decline (locked)", "locked": true }
           ],
           "hudLabel": "Inventory HUD",
           "inventory": [
-            {
-              "key": "gold",
-              "value": "150"
-            },
-            {
-              "key": "hasKey",
-              "value": "true"
-            },
-            {
-              "key": "blade",
-              "value": "×1"
-            }
+            { "key": "gold", "value": "150" },
+            { "key": "hasKey", "value": "true" },
+            { "key": "blade", "value": "×1" }
           ]
         }
       },
@@ -176,21 +146,9 @@
           "kind": "export",
           "caption": "One-click export targets",
           "rows": [
-            {
-              "icon": "code",
-              "label": "Web Exporter",
-              "sub": "Standalone HTML/JS bundle"
-            },
-            {
-              "icon": "file-json",
-              "label": "Ren'Py Scripts",
-              "sub": ".rpy script transpiler"
-            },
-            {
-              "icon": "download",
-              "label": "JSON Spec Contracts",
-              "sub": "Zod-validated bundle"
-            }
+            { "icon": "code", "label": "Web Exporter", "sub": "Standalone HTML/JS bundle" },
+            { "icon": "file-json", "label": "Ren'Py Scripts", "sub": ".rpy script transpiler" },
+            { "icon": "download", "label": "JSON Spec Contracts", "sub": "Zod-validated bundle" }
           ]
         }
       }
@@ -235,82 +193,44 @@
         "id": "dialogue",
         "label": "Dialogue",
         "icon": "message-square",
-        "properties": [
-          "speaker (Character ref)",
-          "text",
-          "backgroundImageId",
-          "audioId"
-        ],
+        "properties": ["speaker (Character ref)", "text", "backgroundImageId", "audioId"],
         "behavior": "Renders a chat bubble bound to the speaker portrait, then halts traversal until the player advances."
       },
       {
         "id": "choice",
         "label": "Choice",
         "icon": "split",
-        "properties": [
-          "choices[]",
-          "targetNodeId",
-          "condition (optional)"
-        ],
+        "properties": ["choices[]", "targetNodeId", "condition (optional)"],
         "behavior": "Filters out any choice whose condition fails, then routes the player to the selected targetNodeId."
       },
       {
         "id": "condition",
         "label": "Condition",
         "icon": "git-branch",
-        "properties": [
-          "variable",
-          "operator",
-          "value",
-          "trueTargetNodeId / falseTargetNodeId"
-        ],
+        "properties": ["variable", "operator", "value", "trueTargetNodeId / falseTargetNodeId"],
         "behavior": "evaluateCondition() coerces types and routes to the true or false branch with zero player input."
       },
       {
         "id": "action",
         "label": "Action",
         "icon": "package",
-        "properties": [
-          "actionType (set_variable / add_inventory / remove_inventory)",
-          "payload",
-          "minConstraint",
-          "failureNodeId"
-        ],
+        "properties": ["actionType (set_variable / add_inventory / remove_inventory)", "payload", "minConstraint", "failureNodeId"],
         "behavior": "Mutates variables or inventory in-place, then auto-advances — or reroutes to failureNodeId if a constraint fails."
       },
       {
         "id": "input",
         "label": "Input",
         "icon": "keyboard",
-        "properties": [
-          "targetVariable",
-          "placeholder",
-          "validation"
-        ],
+        "properties": ["targetVariable", "placeholder", "validation"],
         "behavior": "Pauses the interpreter and waits for submitPlayerInput() before flattening values into global variables."
       }
     ],
     "techStack": [
-      {
-        "name": "React Flow",
-        "role": "Node canvas & graph rendering"
-      },
-      {
-        "name": "Zustand",
-        "role": "Global state finite machine"
-      },
-      {
-        "name": "Zundo",
-        "role": "Temporal undo/redo middleware"
-      },
-      {
-        "name": "Zod",
-        "role": "Runtime schema validation"
-      },
-      {
-        "name": "Tailwind CSS",
-        "role": "Utility-first styling system"
-      }
+      { "name": "React Flow", "role": "Node canvas & graph rendering" },
+      { "name": "Zustand", "role": "Global state finite machine" },
+      { "name": "Zundo", "role": "Temporal undo/redo middleware" },
+      { "name": "Zod", "role": "Runtime schema validation" },
+      { "name": "Tailwind CSS", "role": "Utility-first styling system" }
     ]
   },
   "footer": {
@@ -318,83 +238,44 @@
       "icon": "waypoints",
       "title": "Ready to weave your first branching story?",
       "subtitle": "No account, no server, no lock-in. Every project lives in your browser's IndexedDB.",
-      "cta": {
-        "label": "Launch Studio",
-        "path": "/dashboard"
-      }
+      "cta": { "label": "Launch Studio", "path": "/dashboard" }
     },
     "brand": {
       "title": "StoryWeaver",
       "description": "The enterprise no-code visual novel node engine — local-first, zero-backend, fully client-side.",
       "trustBadges": [
-        {
-          "icon": "shield",
-          "text": "Zero Telemetry"
-        },
-        {
-          "icon": "cpu",
-          "text": "100% Client-Side"
-        },
-        {
-          "icon": "book-open",
-          "text": "Open Source"
-        }
+        { "icon": "shield", "text": "Zero Telemetry" },
+        { "icon": "cpu", "text": "100% Client-Side" },
+        { "icon": "database", "text": "Local-First" }
       ]
     },
     "columns": [
       {
         "title": "Product",
         "links": [
-          {
-            "label": "Project Dashboard",
-            "path": "/dashboard"
-          },
-          {
-            "label": "Node Editor",
-            "path": "/editor"
-          },
-          {
-            "label": "Landing Page",
-            "path": "/"
-          }
+          { "label": "Project Dashboard", "path": "/dashboard" },
+          { "label": "Node Editor", "path": "/editor" },
+          { "label": "Studio Settings", "path": "/settings" }
         ]
       },
       {
-        "title": "Documentation",
+        "title": "Built With",
         "links": [
-          {
-            "label": "Docs & Guides",
-            "path": "/docs"
-          },
-          {
-            "label": "Wiki Index",
-            "url": "#"
-          },
-          {
-            "label": "CS02D Proposal",
-            "url": "#"
-          }
+          { "label": "React 19", "url": "https://react.dev/" },
+          { "label": "TypeScript", "url": "https://www.typescriptlang.org/" },
+          { "label": "Vite", "url": "https://vite.dev/" },
+          { "label": "Zustand", "url": "https://github.com/pmndrs/zustand" },
+          { "label": "Dexie.js", "url": "https://dexie.org/" }
         ]
       },
       {
-        "title": "Repository",
+        "title": "Resources",
         "links": [
-          {
-            "label": "GitHub Repository",
-            "url": "#"
-          },
-          {
-            "label": "Report an Issue",
-            "url": "#"
-          },
-          {
-            "label": "Release Notes",
-            "url": "#"
-          }
+          { "label": "Docs & Guides", "path": "/docs" }
         ]
       }
     ],
     "copyrightLine": "StoryWeaver. Built as a Computer Science Senior Project.",
-    "taglineLine": "Local-first • Zero telemetry • MIT-inspired open source"
+    "taglineLine": "Local-first • Zero telemetry • React + TypeScript + Vite"
   }
 }

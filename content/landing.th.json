@@ -1,0 +1,281 @@
+{
+  "navbar": {
+    "brand": {
+      "title": "StoryWeaver Workspaces",
+      "tagline": "เอนจิน Local-First • v1.0"
+    },
+    "links": [
+      {
+        "label": "ฟีเจอร์",
+        "anchor": "#capabilities"
+      },
+      {
+        "label": "สถาปัตยกรรม",
+        "anchor": "#workflow"
+      },
+      {
+        "label": "โหนดเอนจิน",
+        "anchor": "#node-engine"
+      },
+      {
+        "label": "เอกสาร",
+        "anchor": "/docs"
+      }
+    ],
+    "secondaryCta": {
+      "label": "ไปที่แดชบอร์ด",
+      "path": "/dashboard"
+    },
+    "primaryCta": {
+      "label": "เปิดสตูดิโอ",
+      "path": "/dashboard"
+    }
+  },
+  "hero": {
+    "badgeIcon": "cpu",
+    "badgeText": "เอนจิน Local-First • v1.0",
+    "headlineLead": "สถาปัตยกรรมการเล่าเรื่องเชิงภาพ",
+    "headlineMuted": "ไม่ต้องเขียนโค้ด",
+    "subtitle": "ออกแบบเนื้อเรื่องแบบแตกกิ่ง เครื่องสถานะตัวแปรที่ซับซ้อน และวิชวลโนเวลเชิงโต้ตอบ ด้วยเอนจินกราฟแบบ local-first ประสิทธิภาพสูง",
+    "primaryCta": {
+      "label": "เปิดแดชบอร์ดโปรเจกต์",
+      "path": "/dashboard"
+    },
+    "secondaryCta": {
+      "label": "ดูสเปกสคีมา",
+      "icon": "compass",
+      "targetAnchor": "#workflow"
+    },
+    "pipeline": {
+      "filename": "node_execution_pipeline.json",
+      "liveLabel": "LIVE",
+      "nodes": [
+        {
+          "variant": "start",
+          "icon": "flag",
+          "badgeLabel": "START",
+          "indexLabel": "#000",
+          "title": "เข้าสู่ย่านพ่อค้า"
+        },
+        {
+          "variant": "condition",
+          "icon": "git-branch",
+          "badgeLabel": "CONDITION",
+          "indexLabel": "ผ่านเงื่อนไข",
+          "title": "ประเมิน:",
+          "expression": "hasKey == true",
+          "expressionIcon": "key"
+        },
+        {
+          "variant": "dialogue",
+          "icon": "message-square",
+          "badgeLabel": "DIALOGUE",
+          "indexLabel": "ตัวเลือก",
+          "title": "\"ประตูห้องนิรภัยเปิดออกอย่างช้าๆ...\""
+        }
+      ],
+      "footerTickLabel": "Interpreter tick: 0.06ms",
+      "footerDeterministicLabel": "แน่นอน 100%"
+    }
+  },
+  "scrollytelling": {
+    "eyebrow": "ไปป์ไลน์การเล่าเรื่อง",
+    "title": "จากไอเดียสู่เรื่องราวที่เล่นได้จริง",
+    "steps": [
+      {
+        "badge": "ขั้นตอน 01 — สร้างเนื้อเรื่อง",
+        "title": "การจัดกราฟ",
+        "highlight": "โหนดเชิงภาพ",
+        "description": "ลากวางโหนด Dialogue, Choice, Condition, Action และ Input ลงบนผืนผ้าใบไม่จำกัดขนาด เพื่อสร้างเนื้อเรื่องแบบแตกกิ่งโดยไม่ต้องเขียนโค้ดสักบรรทัด",
+        "bullets": [
+          "ผืนผ้าใบกราฟแบบ snap-to-grid ขับเคลื่อนด้วย React Flow",
+          "แผงตรวจสอบเฉพาะประเภทสำหรับโหนดทุกแบบ",
+          "ตัวสแกนความสมบูรณ์เชิงโครงสร้างจับลิงก์ที่ขาดหายได้แบบเรียลไทม์"
+        ],
+        "visual": {
+          "kind": "graphing",
+          "caption": "ลากลงบนผืนผ้าใบ",
+          "chips": [
+            { "icon": "message-square", "label": "Dialogue" },
+            { "icon": "split", "label": "Choice" },
+            { "icon": "git-branch", "label": "Condition" },
+            { "icon": "package", "label": "Action" },
+            { "icon": "keyboard", "label": "Input" }
+          ],
+          "droppedIcon": "message-square",
+          "droppedLabel": "node-014 · วางแล้ว"
+        }
+      },
+      {
+        "badge": "ขั้นตอน 02 — ตรวจสอบ",
+        "title": "ตัวจำลอง",
+        "highlight": "ทดสอบเล่นแบบเรียลไทม์",
+        "description": "รันไทม์แบบแบ่งหน้าจอให้คุณเล่นเรื่องราวเหมือนที่ผู้เล่นจริงจะเห็น พร้อมประเมินเงื่อนไขแบบทันทีและ HUD คลังไอเทมที่ติดตามทุกตัวแปรแบบสด",
+        "bullets": [
+          "ประเมินสมการตัวแปรและเงื่อนไขแตกกิ่งแบบ JIT",
+          "HUD คลังไอเทมสะท้อนการเปลี่ยนแปลงสถานะทันทีที่เกิดขึ้น",
+          "ย้อนเวลา Undo/Redo ผ่านประวัติที่ขับเคลื่อนด้วย Zundo"
+        ],
+        "visual": {
+          "kind": "playtest",
+          "dialogueText": "คุณมีทอง 150 เหรียญ จะซื้อดาบหายากไหม?",
+          "dialogueHighlight": "ทอง 150 เหรียญ",
+          "choices": [
+            { "label": "ซื้อ — จ่ายทอง 100 เหรียญ", "locked": false },
+            { "label": "ปฏิเสธ (ล็อกอยู่)", "locked": true }
+          ],
+          "hudLabel": "HUD คลังไอเทม",
+          "inventory": [
+            { "key": "gold", "value": "150" },
+            { "key": "hasKey", "value": "true" },
+            { "key": "blade", "value": "×1" }
+          ]
+        }
+      },
+      {
+        "badge": "ขั้นตอน 03 — เผยแพร่",
+        "title": "การส่งออก",
+        "highlight": "เอนจินสากล",
+        "description": "คอมไพล์กราฟที่เสร็จสมบูรณ์เป็นเว็บแบบสแตนด์อโลนที่เล่นได้ทันที ชุดสคริปต์ Ren'Py หรือสัญญาสเปก JSON แบบพกพา — ทั้งหมดในคลิกเดียว",
+        "bullets": [
+          "บิลด์ HTML/JS แบบสแตนด์อโลนไม่มีดีเพนเดนซีผ่าน JSZip",
+          "ตัวแปลง Ren'Py รักษาลำดับการแตกกิ่งและ fork/merge ไว้ครบถ้วน",
+          "ชุด JSON ที่ตรวจสอบด้วย Zod สำหรับนำเข้า/ส่งออกแบบไปกลับได้"
+        ],
+        "visual": {
+          "kind": "export",
+          "caption": "เป้าหมายการส่งออกด้วยคลิกเดียว",
+          "rows": [
+            { "icon": "code", "label": "ตัวส่งออกเว็บ", "sub": "ชุด HTML/JS แบบสแตนด์อโลน" },
+            { "icon": "file-json", "label": "สคริปต์ Ren'Py", "sub": "ตัวแปลงสคริปต์ .rpy" },
+            { "icon": "download", "label": "สัญญาสเปก JSON", "sub": "ชุดที่ตรวจสอบด้วย Zod" }
+          ]
+        }
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "ความสามารถหลักของเอนจิน",
+    "title": "สร้างมาเพื่อนิยายเชิงโต้ตอบระดับมืออาชีพ",
+    "subtitle": "ทุกชั้นของเอนจิน — ตั้งแต่การจัดเก็บข้อมูลไปจนถึงการตีความ — ถูกออกแบบมาเพื่อความน่าเชื่อถือระดับโปรดักชัน",
+    "items": [
+      {
+        "icon": "database",
+        "title": "Local-First และ IndexedDB",
+        "description": "ซิงก์สถานะทันทีด้วย Dexie.js ไม่มีค่าใช้จ่ายเซิร์ฟเวอร์ และความเป็นส่วนตัวของข้อมูลเต็มรูปแบบ — ทุกโปรเจกต์อยู่บนอุปกรณ์ของคุณทั้งหมด"
+      },
+      {
+        "icon": "binary",
+        "title": "ตัวประเมินนิพจน์แบบ JIT",
+        "description": "ประเมินตรรกะการแตกกิ่ง สมการตัวแปร และข้อจำกัดคลังไอเทมแบบเรียลไทม์ ขณะที่ผู้เล่นดำเนินเรื่องต่อไป"
+      },
+      {
+        "icon": "layers",
+        "title": "สถาปัตยกรรมตัวตีความ",
+        "description": "แยกสเปกสคีมา JSON ออกจากวิวพอร์ตการเรนเดอร์อย่างสมบูรณ์ ทำให้รันไทม์ ตัวแก้ไข และตัวส่งออกใช้แหล่งข้อมูลจริงเดียวกัน"
+      },
+      {
+        "icon": "git-fork",
+        "title": "การควบคุมโฟลว์ขั้นสูง",
+        "description": "รองรับ Subgraph, การไล่ผ่านแบบขนาน Fork/Merge และโหนด Input สร้างตัวละครในตัว เพื่อเนื้อเรื่องเชิงลึกที่เล่นซ้ำได้"
+      }
+    ]
+  },
+  "nodeVisualizer": {
+    "eyebrow": "โหนดเอนจิน",
+    "title": "ตรวจสอบโหนดทุกประเภท",
+    "subtitle": "สลับระหว่างประเภทโหนดเพื่อดูตัวอย่างคุณสมบัติและพฤติกรรมการทำงานขณะรันไทม์",
+    "propertiesLabel": "คุณสมบัติ",
+    "behaviorLabel": "พฤติกรรมการทำงาน",
+    "techStackLabel": "สร้างด้วย",
+    "nodeTypes": [
+      {
+        "id": "dialogue",
+        "label": "Dialogue",
+        "icon": "message-square",
+        "properties": ["speaker (Character ref)", "text", "backgroundImageId", "audioId"],
+        "behavior": "แสดงบับเบิลแชทที่ผูกกับภาพตัวละคร แล้วหยุดการไล่ผ่านจนกว่าผู้เล่นจะกดต่อ"
+      },
+      {
+        "id": "choice",
+        "label": "Choice",
+        "icon": "split",
+        "properties": ["choices[]", "targetNodeId", "condition (optional)"],
+        "behavior": "กรองตัวเลือกที่เงื่อนไขไม่ผ่านออก แล้วนำผู้เล่นไปยัง targetNodeId ที่เลือก"
+      },
+      {
+        "id": "condition",
+        "label": "Condition",
+        "icon": "git-branch",
+        "properties": ["variable", "operator", "value", "trueTargetNodeId / falseTargetNodeId"],
+        "behavior": "evaluateCondition() แปลงชนิดข้อมูลและนำไปยังกิ่งจริงหรือเท็จ โดยไม่ต้องมีผู้เล่นป้อนข้อมูล"
+      },
+      {
+        "id": "action",
+        "label": "Action",
+        "icon": "package",
+        "properties": ["actionType (set_variable / add_inventory / remove_inventory)", "payload", "minConstraint", "failureNodeId"],
+        "behavior": "เปลี่ยนค่าตัวแปรหรือคลังไอเทมโดยตรง แล้วเดินหน้าต่ออัตโนมัติ — หรือเปลี่ยนเส้นทางไป failureNodeId หากข้อจำกัดไม่ผ่าน"
+      },
+      {
+        "id": "input",
+        "label": "Input",
+        "icon": "keyboard",
+        "properties": ["targetVariable", "placeholder", "validation"],
+        "behavior": "หยุดตัวตีความและรอ submitPlayerInput() ก่อนแปลงค่าเข้าตัวแปรส่วนกลาง"
+      }
+    ],
+    "techStack": [
+      { "name": "React Flow", "role": "ผืนผ้าใบโหนดและการเรนเดอร์กราฟ" },
+      { "name": "Zustand", "role": "เครื่องสถานะจำกัดของสถานะส่วนกลาง" },
+      { "name": "Zundo", "role": "มิดเดิลแวร์ undo/redo เชิงเวลา" },
+      { "name": "Zod", "role": "การตรวจสอบสคีมาขณะรันไทม์" },
+      { "name": "Tailwind CSS", "role": "ระบบจัดสไตล์แบบ utility-first" }
+    ]
+  },
+  "footer": {
+    "cta": {
+      "icon": "waypoints",
+      "title": "พร้อมสร้างเรื่องราวแตกกิ่งเรื่องแรกของคุณหรือยัง?",
+      "subtitle": "ไม่ต้องสมัครบัญชี ไม่ต้องมีเซิร์ฟเวอร์ ไม่ผูกมัด ทุกโปรเจกต์อยู่ใน IndexedDB ของเบราว์เซอร์คุณ",
+      "cta": { "label": "เปิดสตูดิโอ", "path": "/dashboard" }
+    },
+    "brand": {
+      "title": "StoryWeaver",
+      "description": "เอนจินโหนดวิชวลโนเวลแบบไม่ต้องเขียนโค้ดระดับองค์กร — local-first ไม่มีแบ็กเอนด์ ทำงานฝั่งไคลเอนต์ทั้งหมด",
+      "trustBadges": [
+        { "icon": "shield", "text": "ไม่มีการเก็บ Telemetry" },
+        { "icon": "cpu", "text": "ทำงานฝั่งไคลเอนต์ 100%" },
+        { "icon": "database", "text": "Local-First" }
+      ]
+    },
+    "columns": [
+      {
+        "title": "ผลิตภัณฑ์",
+        "links": [
+          { "label": "แดชบอร์ดโปรเจกต์", "path": "/dashboard" },
+          { "label": "ตัวแก้ไขโหนด", "path": "/editor" },
+          { "label": "การตั้งค่าสตูดิโอ", "path": "/settings" }
+        ]
+      },
+      {
+        "title": "สร้างด้วย",
+        "links": [
+          { "label": "React 19", "url": "https://react.dev/" },
+          { "label": "TypeScript", "url": "https://www.typescriptlang.org/" },
+          { "label": "Vite", "url": "https://vite.dev/" },
+          { "label": "Zustand", "url": "https://github.com/pmndrs/zustand" },
+          { "label": "Dexie.js", "url": "https://dexie.org/" }
+        ]
+      },
+      {
+        "title": "แหล่งข้อมูล",
+        "links": [
+          { "label": "เอกสารและคู่มือ", "path": "/docs" }
+        ]
+      }
+    ],
+    "copyrightLine": "StoryWeaver. โครงงานวิจัยระดับปริญญาตรีสาขาวิทยาการคอมพิวเตอร์",
+    "taglineLine": "Local-first • ไม่มีการเก็บ Telemetry • React + TypeScript + Vite"
+  }
+}
